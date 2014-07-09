@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "knplabs/knp-menu": "2.0.*@alpha",
+        "knplabs/knp-menu": "2.0.*@beta",
         "symfony/http-foundation": "~2.3"
     },
     "require-dev": {
