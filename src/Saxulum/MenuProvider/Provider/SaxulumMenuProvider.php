@@ -3,7 +3,7 @@
 namespace Saxulum\MenuProvider\Provider;
 
 use Knp\Menu\Matcher\Matcher;
-use Knp\Menu\Silex\Voter\RouteVoter;
+use Knp\Menu\Matcher\Voter\RouteVoter;
 
 class SaxulumMenuProvider
 {
