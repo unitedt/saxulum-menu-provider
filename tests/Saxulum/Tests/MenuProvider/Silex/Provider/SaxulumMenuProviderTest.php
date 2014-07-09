@@ -3,8 +3,8 @@
 namespace Saxulum\Tests\MenuProvider\Silex\Provider;
 
 use Knp\Menu\MenuFactory;
-use Knp\Menu\Silex\KnpMenuServiceProvider;
-use Knp\Menu\Silex\Voter\RouteVoter;
+use Knp\Menu\Integration\Silex\KnpMenuServiceProvider;
+use Knp\Menu\Matcher\Voter\RouteVoter;
 use Saxulum\MenuProvider\Silex\Provider\SaxulumMenuProvider;
 use Silex\Application;
 use Silex\Provider\UrlGeneratorServiceProvider;
