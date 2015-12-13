@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3,<8.0",
+        "php": ">=5.3.9,<8.0",
         "knplabs/knp-menu": "~2.1@dev",
         "symfony/http-foundation": "~2.7|~3.0"
     },
