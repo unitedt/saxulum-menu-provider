@@ -9,6 +9,7 @@ use Saxulum\MenuProvider\Silex\Provider\SaxulumMenuProvider;
 use Silex\Application;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Response;
 
 class SaxulumMenuProviderTest extends \PHPUnit_Framework_TestCase
@@ -22,10 +23,15 @@ class SaxulumMenuProviderTest extends \PHPUnit_Framework_TestCase
 
         $app->get($this->prepareMatch($route, $parameters), function () { return new Response('valid route'); })->bind($route);
 
+        $requestStack = new RequestStack();
+
         $request = new Request();
         $request->attributes->set('_route', $route);
         $request->attributes->set('_route_params', $parameters);
-        $app['request'] = $request;
+
+        $requestStack->push($request);
+
+        $app['request_stack'] = $requestStack;
 
         /** @var MenuFactory $menuFactory */
         $menuFactory = $app['knp_menu.factory'];

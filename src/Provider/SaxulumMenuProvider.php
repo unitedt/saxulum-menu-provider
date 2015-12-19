@@ -11,7 +11,7 @@ class SaxulumMenuProvider
     {
         $container['knp_menu.route.voter'] = $container->share(function (\Pimple $container) {
             $voter = new RouteVoter();
-            $voter->setRequest($container['request']);
+            $voter->setRequest($container['request_stack']->getCurrentRequest());
 
             return $voter;
         });
