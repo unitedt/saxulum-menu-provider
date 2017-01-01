@@ -2,12 +2,13 @@
 
 namespace Saxulum\MenuProvider\Provider;
 
+use Pimple\Container;
 use Knp\Menu\Matcher\Matcher;
 use Knp\Menu\Matcher\Voter\RouteVoter;
 
 class SaxulumMenuProvider
 {
-    public function register(\Pimple $container)
+    public function register(Container $container)
     {
         $container['knp_menu.route.voter'] = $container->share(function (\Pimple $container) {
             $voter = new RouteVoter();
