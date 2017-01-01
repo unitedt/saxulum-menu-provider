@@ -9,9 +9,13 @@
             "email": "dominik.zogg@gmail.com"
         }
     ],
+    "repositories" : [{
+        "type" : "vcs",
+        "url" : "https://github.com/unitedt/KnpMenu"
+    }],
     "require": {
         "php": ">=5.3.9,<8.0",
-        "knplabs/knp-menu": "~2.1@dev",
+        "unitedt/knp-menu": "dev-master@dev",
         "symfony/http-foundation": "~2.7|~3.0"
     },
     "require-dev": {
