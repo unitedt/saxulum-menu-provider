@@ -4,7 +4,7 @@ namespace Saxulum\MenuProvider\Silex\Provider;
 
 use Saxulum\MenuProvider\Provider\SaxulumMenuProvider as BaseSaxulumMenuProvider;
 use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\ServiceProviderInterface;
 
 class SaxulumMenuProvider implements ServiceProviderInterface
 {
