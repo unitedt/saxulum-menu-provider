@@ -1,5 +1,5 @@
 {
-    "name": "saxulum/saxulum-menu-provider",
+    "name": "unitedt/saxulum-menu-provider",
     "description": "Saxulum Menu Provider",
     "keywords": ["saxulum", "knp-menu", "request-voter"],
     "license": "MIT",
@@ -16,10 +16,10 @@
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
-        "silex/silex": "~1.3"
+        "silex/silex": "~2"
     },
     "suggests": {
-        "silex/silex": "~1.3"
+        "silex/silex": "~2"
     },
     "autoload": {
         "psr-4": { "Saxulum\\MenuProvider\\": "src/" }
